@@ -1,0 +1,45 @@
+/*Colores: #94FAA6
+           #8FDE83
+           #C7F59D
+           #CFDE83
+           #FAF594 */
+
+body{
+    background-color:#C7F59D ;
+}
+
+.logoAlura{
+    margin-left: 7%;
+    margin-top: 3%;
+}
+
+main{
+    text-align: center;
+}
+
+.container{
+    margin-top: 15%;
+}
+
+input{
+    margin-bottom: 9%;
+    width: 30%;
+    height: 80%;
+    border-radius: 68px;   
+    font-family: 'Press Start 2P', cursive;
+}
+
+.buttonIniciar{
+    background-color: #FAF594;
+    border: 1px solid #FAF594;
+    color: #8FDE83;
+    font-size: xx-large;
+}
+
+.buttonNuevaPalabra{
+    width: 42%;
+    background-color: #CFDE83;
+    border: 1px solid #CFDE83;
+    color: #FAF594;
+    font-size: xx-large;
+}
