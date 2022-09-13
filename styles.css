@@ -5,10 +5,14 @@
            #FAF594 */
 
 body{
-    background-color:#C7F59D ;
+    background-color:#C7F59D;
 }
 
 .logoAlura{
+    background-image: url(images/aluragreen.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 4rem;
     margin-left: 7%;
     margin-top: 3%;
 }
@@ -42,4 +46,47 @@ input{
     border: 1px solid #CFDE83;
     color: #FAF594;
     font-size: xx-large;
+}
+
+.containerJuego{
+    display: none;
+    margin-top: 0;
+}
+
+.imagenAhorcado {
+    height: 45vh;
+    width: 33%;
+    margin-left: 20vw;
+    background-color: #FAF594;
+    border-radius: 68px;
+    background-image: url("images/horca.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.letrasAdivinadas{
+    height: 20vh;
+    background-color: #FAF594;
+    margin: 2% 0;
+}
+
+.botonera{
+    height: 15vh;
+    
+}
+
+.buttonAlgo{
+    width: 20vw;
+    margin-top: 10%;
+    background-color: #FAF594;
+    border: 1px solid #FAF594;
+    color: #8FDE83;
+}
+
+.buttonTerminar{
+    width: 20vw;
+    margin-top: 10%;
+    background-color: #CFDE83;
+    border: 1px solid #CFDE83;
+    color: #FAF594;
 }

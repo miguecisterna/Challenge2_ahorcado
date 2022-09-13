@@ -11,20 +11,55 @@
     <link rel="stylesheet" href="styles.css">
     <title>Ahorcado</title>
 </head>
-<body>
+<body id="body">
     <header>
-        <img src="images/aluragreen.png" alt="" class="logoAlura">
+        <div class="logoAlura" id="logoAlura">
+
+        </div>
+        
     </header>
     <main>
         <article>
-            <div class="container">
+            <div class="container" id="botonesMenuPrinipal">
                 <div class="row">
-                    <div class="col-12"><input type="button" value="Iniciar" class="buttonIniciar"></div>
-                    <div class="col-12"><input type="button" value="Agregar palabra" class="buttonNuevaPalabra"></div>
+                    <div class="col-12"><input type="button" value="Iniciar" id="botonInicio" class="buttonIniciar" onclick="iniciarJuego()"></div>
+                    <div class="col-12"><input type="button" value="Agregar palabra" id="botonNuevaPalabra" class="buttonNuevaPalabra"></div>
+                </div>
+            </div>
+
+            <div class="container containerJuego" id="containerJuego">
+                <div class="row">
+
+                    <div class="col-12 imagenAhorcado">
+                        
+                    </div>
+
+                    <div class="col-12 letrasAdivinadas">
+
+                    </div>                    
+
+                    <div class="col-12 botonera">
+                        <div class="row">
+                            <div class="col-4">
+
+                                <input type="button" value="Algo copado" id="botonInicio" class="buttonAlgo" onclick="">
+
+                            </div>
+                            <div class="col-4 letrasErradas">
+
+                            </div>
+                            <div class="col-4">
+
+                                <input type="button" value="terminar" class="buttonTerminar" onclick="terminarJuego()">
+                                
+                            </div>
+                        </div>                        
+                    </div>
                 </div>
             </div>
         </article>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
