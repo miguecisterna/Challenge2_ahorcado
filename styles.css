@@ -53,10 +53,13 @@ input{
     margin-top: 0;
 }
 
+.horca{
+    justify-content: center;
+}
+
 .imagenAhorcado {
     height: 45vh;
     width: 33%;
-    margin-left: 20vw;
     background-color: #FAF594;
     border-radius: 68px;
     background-image: url("images/horca.png");
@@ -66,8 +69,34 @@ input{
 
 .letrasAdivinadas{
     height: 20vh;
-    background-color: #FAF594;
     margin: 2% 0;
+}
+
+.letras{
+    justify-content: center;
+    margin-bottom: -2vw;
+}
+
+.letras p{
+    display: contents;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10vh;
+    color: #FAF594;
+}
+
+.espacios{
+    justify-content: center;
+}
+
+.espacios p{
+    display: contents;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10vh;
+    color: #FAF594;
+}
+
+.claseLetra{
+    margin-left: 115vw;
 }
 
 .botonera{
