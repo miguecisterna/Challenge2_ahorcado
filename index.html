@@ -30,11 +30,15 @@
             <div class="container containerJuego" id="containerJuego">
                 <div class="row horca">
 
-                    <div class="col-12 imagenAhorcado">
-                        
+                    <div class="col-6 imagenAhorcado" id="imagenAhorcado"></div>
+
+                    <div class="col-6 racha" id="racha">
+                        <div class="row tituloContainer">
+                            <div class="col-12"><h3>racha</h3></div>
+                        </div>
                     </div>
 
-                    <div class="col-12 letrasAdivinadas">
+                    <div class="col-12 letrasAdivinadas" id="letrasAdivinadas">
                         <div class="row letras" id="letras">
                             
                         </div>
@@ -44,7 +48,7 @@
 
                     </div>                    
 
-                    <div class="col-12 botonera">
+                    <div class="col-12 botonera" id="botonera">
                         <div class="row">
                             <div class="col-4">
 
@@ -60,6 +64,19 @@
                                 
                             </div>
                         </div>                        
+                    </div>
+
+                    <div class="col-12 gameOver" id="gameOver">
+
+                        <div class="row">
+                            <div class="col-12 Perdiste"><h2>Perdiste, intenta de nuevo!</h2></div>
+                            <div class="col-12">
+
+                                <input type="button" value="Volver a Jugar" class="buttonTerminar volverAJugar" onclick="terminarJuego()">
+
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

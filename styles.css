@@ -8,6 +8,13 @@ body{
     background-color:#C7F59D;
 }
 
+h2{
+    padding-top: 5vh;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 5vh;
+    color: #FAF594;
+}
+
 .logoAlura{
     background-image: url(images/aluragreen.png);
     background-repeat: no-repeat;
@@ -67,6 +74,17 @@ input{
     background-size: contain;
 }
 
+.racha{
+    border: 0.5vw solid #FAF594;
+    border-radius: 68px;
+}
+
+.tituloContainer{
+    border: 0.5vw solid #FAF594;
+    border-radius: 68px 68px 0 0;
+    margin: -0.5vh -1vw;   
+}
+
 .letrasAdivinadas{
     height: 20vh;
     margin: 2% 0;
@@ -81,7 +99,7 @@ input{
     display: contents;
     font-family: 'Press Start 2P', cursive;
     font-size: 10vh;
-    color: #FAF594;
+    color: #8FDE83;
 }
 
 .espacios{
@@ -97,6 +115,10 @@ input{
 
 .claseLetra{
     margin-left: 115vw;
+}
+
+#adivinada{
+    color: #FAF594;
 }
 
 .botonera{
@@ -118,4 +140,9 @@ input{
     background-color: #CFDE83;
     border: 1px solid #CFDE83;
     color: #FAF594;
+}
+
+.volverAJugar{
+    margin-top: 3vh;
+    font-size: 1.3vw;
 }
