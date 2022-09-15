@@ -15,6 +15,11 @@ h2{
     color: #FAF594;
 }
 
+h3{
+    font-family: 'Press Start 2P', cursive;
+    color: #FAF594;
+}
+
 .logoAlura{
     background-image: url(images/aluragreen.png);
     background-repeat: no-repeat;
@@ -83,6 +88,12 @@ input{
     border: 0.5vw solid #FAF594;
     border-radius: 68px 68px 0 0;
     margin: -0.5vh -1vw;   
+}
+
+.palabraAdivinada{
+    font-family: 'Press Start 2P', cursive;
+    color: #FAF594;
+    margin: 1vh 0;
 }
 
 .letrasAdivinadas{
