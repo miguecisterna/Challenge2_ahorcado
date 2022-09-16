@@ -103,7 +103,8 @@ input{
 
 .letras{
     justify-content: center;
-    margin-bottom: -2vw;
+    margin-bottom: 8vh;
+    padding-top: 15vh;
 }
 
 .letras p{

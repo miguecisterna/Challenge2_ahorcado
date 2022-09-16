@@ -6,23 +6,36 @@ let ancestor = document.getElementById('letras'),
 let descendentsArray = [];    
 let contadorIntentos = 4;
 let acerto;
+let aciertos = [];
+let acierto = "v";
     
     
 //Funciones:
-function iniciarJuego(){
 
+function iniciarJuego(){
+    //Iniciamos Contador de intentos
     contadorIntentos = 4;
-    
+
+    //Disableamos los botones del menú principal y cambiamos color de fondo y imagen de logo de alura
     document.getElementById("botonesMenuPrinipal").style.display = "none";
     document.getElementById("body").style.backgroundColor = "#8FDE83";
     document.getElementById("logoAlura").style.backgroundImage = "url('images/aluralightgreen.png')";
+
+    //Habilitamos los contenedores del juego
     document.getElementById("containerJuego").style.display = "block";
     document.getElementById("letrasAdivinadas").style.display = "block";
     document.getElementById("botonera").style.display = "block";
+
+    //Deshabilitamos mensaje de game over
     document.getElementById("gameOver").style.display = "none";
+
+    //Elejimos palabra Secreta
     elegirPalabraSecreta();
+
+    //imprimimos la palabra elegida por consola(Para fines de desarrollo y testeo ;))
     console.log(palabraSecreta);
     
+    //Creamos los tags que van a componer la palabraSecreta y los _ que estarán debajo de cada letra
     for(let i = 0; i < palabraSecreta.length; i++){
         var tag = document.createElement("p");
         var tag2 = document.createElement("p");
@@ -36,10 +49,10 @@ function iniciarJuego(){
 
         document.getElementById("letras").appendChild(tag);
         document.getElementById("espacios").appendChild(tag2);
-
-        var letraSecreta = document.getElementById("letras").appendChild(tag);        
+        
     }
 
+    //Creamos un array con cada letra de la palabraSecreta
     for(let i = 0; i < descendents.length; i++){
 
         descendentsArray.push(descendents[i].innerHTML);
@@ -60,19 +73,24 @@ function terminarJuego(){
     
 }
 
+//Elegimos una palabra de la lista, la pasamos a mayuscula y activamos eventListener para teclado
 function elegirPalabraSecreta(){
     palabraSecreta = listaDePalabras[Math.floor(Math.random() * listaDePalabras.length)];
     palabraSecreta = palabraSecreta.toUpperCase();
+    document.addEventListener('keydown',respondKeydown);
 }
 
-document.addEventListener('keydown', function(event) {
-    const key = event.key;
+//Capturamos la tecla pulsada, la pasamos a mayuscula y la limitamos a 1 sola. Luego checkeamos la tecla pulsada
+function respondKeydown(event) {
+    key = event.key;
     teclaPulsada = key.toUpperCase();
     key.length === 1;
     console.log(teclaPulsada);
     checkearLetra();
-});
+    
+};
 
+//Checkeamos la tecla pulsada
 function checkearLetra(tecla){
     tecla = teclaPulsada;    
 
@@ -81,7 +99,7 @@ function checkearLetra(tecla){
         if(tecla == descendents[i].innerHTML){
             descendents[i].setAttribute("id","adivinada");
             console.log("Letra correcta, seguí intentandos-");
-            acerto = true;
+            acerto = true;            
             nuevaPalabra();
         }       
             
@@ -119,6 +137,10 @@ function nuevaPalabra(){
     let aciertos = [];
     let acierto = "v";
 
+    if(descendentsArray.length == aciertos.length){
+        document.removeEventListener("keydown",respondKeydown);
+    }
+    
     for(let i=0; i < descendents.length;i++){
         if(descendents[i].id == "adivinada"){
             aciertos.push(acierto);
@@ -126,6 +148,9 @@ function nuevaPalabra(){
     }
 
     if(aciertos.length == palabraSecreta.length){
+
+       teclaPulsada = "null";
+
         var tag = document.createElement("p");
         var letra = document.createTextNode(palabraSecreta);
 
@@ -184,6 +209,9 @@ function nuevaPalabra(){
             descendentsArray.push(descendents[i].innerHTML);
               
         }
+
+        //reinciamos el eventListener
+        
     }
 
     console.log(aciertos);
