@@ -4,23 +4,23 @@
            #CFDE83
            #FAF594 */
 
-body{
-    background-color:#C7F59D;
+body {
+    background-color: #C7F59D;
 }
 
-h2{
+h2 {
     padding-top: 5vh;
     font-family: 'Press Start 2P', cursive;
     font-size: 5vh;
     color: #FAF594;
 }
 
-h3{
+h3 {
     font-family: 'Press Start 2P', cursive;
     color: #FAF594;
 }
 
-.logoAlura{
+.logoAlura {
     background-image: url(images/aluragreen.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -29,30 +29,30 @@ h3{
     margin-top: 3%;
 }
 
-main{
+main {
     text-align: center;
 }
 
-.container{
+.container {
     margin-top: 15%;
 }
 
-input{
+input {
     margin-bottom: 9%;
     width: 30%;
     height: 80%;
-    border-radius: 68px;   
+    border-radius: 68px;
     font-family: 'Press Start 2P', cursive;
 }
 
-.buttonIniciar{
+.buttonIniciar {
     background-color: #FAF594;
     border: 1px solid #FAF594;
     color: #8FDE83;
     font-size: xx-large;
 }
 
-.buttonNuevaPalabra{
+.buttonNuevaPalabra {
     width: 42%;
     background-color: #CFDE83;
     border: 1px solid #CFDE83;
@@ -60,12 +60,12 @@ input{
     font-size: xx-large;
 }
 
-.containerJuego{
+.containerJuego {
     display: none;
     margin-top: 0;
 }
 
-.horca{
+.horca {
     justify-content: center;
 }
 
@@ -74,71 +74,71 @@ input{
     width: 33%;
     background-color: #FAF594;
     border-radius: 68px;
-    background-image: url("images/horca.png");
+    background-image: url("images/_horca4.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-.racha{
+.racha {
     border: 0.5vw solid #FAF594;
     border-radius: 68px;
 }
 
-.tituloContainer{
+.tituloContainer {
     border: 0.5vw solid #FAF594;
     border-radius: 68px 68px 0 0;
-    margin: -0.5vh -1vw;   
+    margin: -0.5vh -1vw;
 }
 
-.palabraAdivinada{
+.palabraAdivinada {
     font-family: 'Press Start 2P', cursive;
     color: #FAF594;
     margin: 1vh 0;
 }
 
-.letrasAdivinadas{
+.letrasAdivinadas {
     height: 20vh;
     margin: 2% 0;
 }
 
-.letras{
+.letras {
     justify-content: center;
     margin-bottom: 8vh;
     padding-top: 15vh;
 }
 
-.letras p{
+.letras p {
     display: contents;
     font-family: 'Press Start 2P', cursive;
     font-size: 10vh;
     color: #8FDE83;
 }
 
-.espacios{
+.espacios {
     justify-content: center;
 }
 
-.espacios p{
+.espacios p {
     display: contents;
     font-family: 'Press Start 2P', cursive;
     font-size: 10vh;
     color: #FAF594;
 }
 
-.claseLetra{
+.claseLetra {
     margin-left: 115vw;
 }
 
-#adivinada{
+#adivinada {
     color: #FAF594;
 }
 
-.botonera{
+.botonera {
     height: 15vh;
-    
+
 }
 
-.buttonAlgo{
+.buttonAlgo {
     width: 20vw;
     margin-top: 10%;
     background-color: #FAF594;
@@ -146,7 +146,7 @@ input{
     color: #8FDE83;
 }
 
-.buttonTerminar{
+.buttonTerminar {
     width: 20vw;
     margin-top: 10%;
     background-color: #CFDE83;
@@ -154,7 +154,7 @@ input{
     color: #FAF594;
 }
 
-.volverAJugar{
+.volverAJugar {
     margin-top: 3vh;
     font-size: 1.3vw;
 }
