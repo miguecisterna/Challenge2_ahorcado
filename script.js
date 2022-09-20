@@ -7,6 +7,7 @@ let descendentsArray = [];
 let contadorIntentos = 4;
 let acerto;
 let aciertos = [];
+let palabra = document.querySelector(".palabraNueva");
 
 //Funciones:
 
@@ -61,16 +62,26 @@ function terminarJuego() {
     document.getElementById("espacios").innerHTML = "";
     document.getElementById("imagenAhorcado").style.backgroundImage = 'url("images/_horca4.png")';
     document.getElementById("containerAgregarPalabra").style.display = "none";
+   
+    var e = document.getElementById("palabrasAdivinadas");
+    var child = e.lastElementChild;
+
+    while(child){
+        e.removeChild(child);
+        child = e.lastElementChild;
+    }
+
     palabraSecreta = "";
     teclaPulsada = "";
     ancestor = document.getElementById('letras');
     descendents = ancestor.getElementsByTagName('*');
     descendentsArray = [];
-    contadorIntentos;
+    contadorIntentos = 4;
     acerto;
     aciertos = [];
 
-    
+    document.removeEventListener("keydown", processKey);
+
 }
 
 //Elegimos una palabra de la lista, la pasamos a mayuscula y activamos eventListener para teclado
@@ -152,7 +163,6 @@ function nuevaPalabra() {
             document.getElementById("letras").removeChild(child);
             document.getElementById("espacios").removeChild(child2);
 
-
         }   
 
         //reiniciamos contador de aciertos y el adescendentsArray
@@ -180,13 +190,11 @@ function agregarPalabra(){
     document.getElementById("logoAlura").style.backgroundImage = "url('images/aluralightgreen.png')";
 
     //Habilitamos los contenedores del juego
-    document.getElementById("containerAgregarPalabra").style.display = "block";
-    
+    document.getElementById("containerAgregarPalabra").style.display = "block";    
 
     //Deshabilitamos mensaje de game over
     document.getElementById("gameOver").style.display = "none";
 }
-const palabra = document.querySelector(".palabraNueva");
 
 function guardarNuevaPalabra(palabraNueva){
     palabraNueva = palabra.value; 
@@ -195,5 +203,23 @@ function guardarNuevaPalabra(palabraNueva){
     console.log(listaDePalabras);
     document.getElementById("containerAgregarPalabra").style.display = "none";
     iniciarJuego();
+    palabra.value = "";
 }
 
+function nuevoJuego(){
+    palabraSecreta = "";
+    contadorIntentos = 4;
+    document.getElementById("letras").innerHTML = "";
+    document.getElementById("espacios").innerHTML = "";
+    document.getElementById("imagenAhorcado").style.backgroundImage = 'url("images/_horca4.png")';
+
+    var e = document.getElementById("palabrasAdivinadas");
+    var child = e.lastElementChild;
+
+    while(child){
+        e.removeChild(child);
+        child = e.lastElementChild;
+    }
+
+    iniciarJuego();
+}
