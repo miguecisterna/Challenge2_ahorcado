@@ -90,7 +90,7 @@ function terminarJuego() {
     palabraSecreta = "";
     document.getElementById("letras").innerHTML = "";
     document.getElementById("espacios").innerHTML = "";
-    document.getElementById("imagenAhorcado").style.backgroundImage = 'url("images/_horca4.png")';
+    document.getElementById("imagenAhorcado").style.backgroundImage = 'url("images/horca4.png")';
     document.getElementById("containerAgregarPalabra").style.display = "none";
    
     var e = document.getElementById("palabrasAdivinadas");
@@ -155,10 +155,10 @@ function checkearLetra(tecla) {
         document.getElementById("letrasErradas").appendChild(tag);
     }
 
-    document.getElementById("imagenAhorcado").style.backgroundImage = `url(images/_horca${contadorIntentos}.png)`;
+    document.getElementById("imagenAhorcado").style.backgroundImage = `url(images/horca${contadorIntentos}.png)`;
 
     if(contadorIntentos < 0){
-        document.getElementById("imagenAhorcado").style.backgroundImage = `url(images/_horca0.png)`;
+        document.getElementById("imagenAhorcado").style.backgroundImage = `url(images/horca0.png)`;
     }
 
     if (contadorIntentos == 0) {
@@ -258,7 +258,7 @@ function nuevoJuego(){
     contadorIntentos = 4;
     document.getElementById("letras").innerHTML = "";
     document.getElementById("espacios").innerHTML = "";
-    document.getElementById("imagenAhorcado").style.backgroundImage = 'url("images/_horca4.png")';
+    document.getElementById("imagenAhorcado").style.backgroundImage = 'url("images/horca4.png")';
 
     var e = document.getElementById("palabrasAdivinadas");
     var child = e.lastElementChild;
