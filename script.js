@@ -167,6 +167,7 @@ function checkearLetra(tecla) {
         document.getElementById("letrasAdivinadas").style.display = "none";
         document.getElementById("botonera").style.display = "none";
         document.getElementById("gameOver").style.display = "block";
+        document.getElementById("perdisteH2").innerHTML="Perdiste!! la palabra era: " + palabraSecreta;
         inGameAudio.pause();
         inGameAudio.currentTime = 0;
         gameOverAudio.play();
