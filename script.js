@@ -17,10 +17,12 @@ var gameOverAudio = new Audio("audio/gameOver.mp3")
 
 function muteUnmuteSound(){
     if(!audio.muted){
+    document.getElementById("botonSound").style.color = "#b7b36e";    
     audio.muted = true;
     inGameAudio.muted = true;
     gameOverAudio.muted = true;
     }else{
+    document.getElementById("botonSound").style.color = "#FAF594"; 
     audio.muted = false;
     inGameAudio.muted = false;
     gameOverAudio.muted = false;
