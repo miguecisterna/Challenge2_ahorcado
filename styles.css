@@ -25,6 +25,15 @@ h3 {
     margin-left: 7%;
     margin-top: 3%;
 }
+.buttonSound{
+    padding-bottom: 6vh;
+    margin-left: 90%;
+    width: 3%;
+    background-color: #CFDE83;
+    border: 1px solid #CFDE83;
+    color: #FAF594;
+    font-size: xx-large;
+}
 main {
     text-align: center;
 }
@@ -121,15 +130,30 @@ input {
     color: #8FDE83;
 }
 .buttonTerminar {
-    width: 30vw;
+    width: 20vw;
     margin-top: 10%;
     background-color: #CFDE83;
     border: 1px solid #CFDE83;
     color: #FAF594;
 }
+.letrasErradas{
+    background-color: #C7F59D;
+    margin-top: 2%;
+    height: 10vh;
+}
+.letraErrada{
+    font-family: 'Press Start 2P', cursive;
+    color: #d2450d;
+    margin: 1vh;
+    display: inline-block;
+}
 .volverAJugar {
     margin-top: 3vh;
     font-size: 1.3vw;
+    width: 30vw;
+    background-color: #CFDE83;
+    border: 1px solid #CFDE83;
+    color: #FAF594;
 }
 #containerAgregarPalabra{
     display: none;

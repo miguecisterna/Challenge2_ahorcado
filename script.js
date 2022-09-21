@@ -1,4 +1,4 @@
-let listaDePalabras = ["calavera","castillo","horca","soga","sangre","muerte","ahorcado","mago","dragón","princesa","rey","zombie","vampiro","murcielago","torre","luna","estrella","rosa","reina","mundo","hermitaño","diablo","enamorados","fuerza","mundo","juicio"];
+let listaDePalabras = ["calavera","castillo","horca","soga","sangre","muerte","ahorcado","mago","dragón","princesa","rey","zombie","vampiro","murcielago","torre","luna","estrella","rosa","reina","mundo","hermita","diablo","enamorados","fuerza","mundo","juicio"];
 let palabraSecreta = "";
 let teclaPulsada = "";
 let ancestor = document.getElementById('letras');
@@ -9,9 +9,28 @@ let acerto;
 let aciertos = [];
 let palabra = document.querySelector(".palabraNueva");
 
+var audio = new Audio("audio/mainMenu.mp3");
+var inGameAudio = new Audio("audio/inGame.mp3");
+var gameOverAudio = new Audio("audio/gameOver.mp3")
+
 //Funciones:
 
-function iniciarJuego() {
+function muteUnmuteSound(){
+    if(!audio.muted){
+    audio.muted = true;
+    inGameAudio.muted = true;
+    gameOverAudio.muted = true;
+    }else{
+    audio.muted = false;
+    inGameAudio.muted = false;
+    gameOverAudio.muted = false;
+    }    
+}
+
+function iniciarJuego() { 
+    audio.pause();   
+    inGameAudio.pause();
+
     //Disableamos los botones del menú principal y cambiamos color de fondo y imagen de logo de alura
     document.getElementById("botonesMenuPrinipal").style.display = "none";
     document.getElementById("body").style.backgroundColor = "#8FDE83";
@@ -49,9 +68,20 @@ function iniciarJuego() {
     for (let i = 0; i < descendents.length; i++) {
         descendentsArray.push(descendents[i].innerHTML);
     }
+
+    
+    inGameAudio.play();
+    inGameAudio.loop = true;
 }
 
 function terminarJuego() {
+    inGameAudio.pause();
+    inGameAudio.currentTime = 0;
+    gameOverAudio.pause();
+    gameOverAudio.currentTime = 0;
+    audio.currentTime = 0;
+    audio.play();
+    audio.loop = true;
 
     document.getElementById("botonesMenuPrinipal").style.display = "block";
     document.getElementById("body").style.backgroundColor = "#C7F59D";
@@ -66,9 +96,16 @@ function terminarJuego() {
     var e = document.getElementById("palabrasAdivinadas");
     var child = e.lastElementChild;
 
+    var f = document.getElementById("letrasErradas");
+    var childf = f.lastElementChild;
+
     while(child){
         e.removeChild(child);
         child = e.lastElementChild;
+    }
+    while(childf){
+        f.removeChild(childf);
+        childf = f.lastElementChild;
     }
 
     palabraSecreta = "";
@@ -111,6 +148,11 @@ function checkearLetra(tecla) {
 
     if (descendentsArray.includes(tecla) === false) {
         contadorIntentos--;
+        var tag = document.createElement("p");
+        var letra = document.createTextNode(tecla);
+        tag.appendChild(letra);
+        tag.classList.add("letraErrada");
+        document.getElementById("letrasErradas").appendChild(tag);
     }
 
     document.getElementById("imagenAhorcado").style.backgroundImage = `url(images/_horca${contadorIntentos}.png)`;
@@ -123,6 +165,9 @@ function checkearLetra(tecla) {
         document.getElementById("letrasAdivinadas").style.display = "none";
         document.getElementById("botonera").style.display = "none";
         document.getElementById("gameOver").style.display = "block";
+        inGameAudio.pause();
+        inGameAudio.currentTime = 0;
+        gameOverAudio.play();
     }
 
     if (descendentsArray.length === aciertos.length) {
@@ -131,6 +176,8 @@ function checkearLetra(tecla) {
 }
 
 function nuevaPalabra() {
+    inGameAudio.pause();
+
     if (aciertos.length == palabraSecreta.length) {
 
         teclaPulsada = "null";
