@@ -24,10 +24,14 @@ h3 {
     height: 4rem;
     margin-left: 7%;
     margin-top: 3%;
+    width: 3vw;
+    display: inline-block;   
 }
 .buttonSound{
-    padding-bottom: 6vh;
-    margin-left: 90%;
+    float: right;
+    padding-bottom: 1vh;
+    margin-top: 3%;
+    margin-right: 5%;
     width: 3%;
     background-color: #CFDE83;
     border: 1px solid #CFDE83;
