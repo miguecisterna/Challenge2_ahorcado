@@ -189,3 +189,208 @@ input {
     background-color: #CFDE83;
     color: #FAF594;
 }
+@media (max-width: 768px) {
+    .logoAlura{
+        width: 8vw;
+        margin-top: 10%;
+    }
+    .buttonSound{
+        width: 15vw;
+        margin-top: 9%;
+    }
+    .col-12 input{
+        font-size: inherit;
+        width: 65vw;
+    }
+    .imagenAhorcado {
+        margin-left: 5vw;
+        height: 17vh;
+        width: 18vh;
+        background-color: #FAF594;
+        border-radius: 68px;
+        background-image: url(images/horca4.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 30px;
+    }
+
+    .spaceBetween{
+        display: contents;
+        margin-left: 10vw;
+    }
+    .racha{
+        margin-left: 5vw;
+        width: 33vw;
+        border-radius: 30px;
+    }
+    .palabraAdivinada{
+        font-size: x-small;
+    }
+    .tituloContainer {
+        border: 0.5vw solid #FAF594;
+        border-radius: 30px 30px 0 0;
+        margin: -0.5vh -3vw;
+    }
+    h2 {
+        padding-top: 5vh;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 2vh;
+        color: #FAF594;
+    }
+    h3{
+        font-size: medium;
+        padding-top: 1vh;
+    }
+    .letras p {
+        display: contents;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 4vh;
+        color: #8FDE83;
+    }
+    .espacios p {
+        display: contents;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 4vh;
+        color: #FAF594;
+    }
+    .letrasAdivinadas {
+        height: 10vh;
+        margin: 2% 0;
+    }
+    .buttonAlgo{
+        width: 23vw !important;
+        height: 5vh;
+        font-size: small;
+    }
+    .letrasErradas{
+        border-radius: 30px;
+    }
+    .buttonTerminar{
+        width: 35vw !important;
+        height: 5vh;
+        font-size: small !important;
+    }
+    .volverAJugar{
+        width: 58vw !important;
+    }
+    .containerPalabra{
+        display: block;
+    }
+    .containerPalabra .col-6{
+        display: inline-block;
+    }
+    .divCancelar{
+        display: contents !important;
+    }
+    .palabraNueva{
+        width: 20em;
+        font-size: 4vh !important;
+    }
+    .buttonGuardarYEmpezar{
+        width: 45vw !important;
+        font-size: xx-small;
+    }
+    .buttonCancelar{
+        width: 41vw !important;
+        font-size: xx-small;
+        margin-left: 4vw;
+    }
+  }
+@media (max-width: 480px) {
+    .logoAlura{
+        width: 8vw;
+        margin-top: 10%;
+    }
+    .buttonSound{
+        width: 15vw;
+        margin-top: 9%;
+    }
+    .col-12 input{
+        font-size: inherit;
+        width: 65vw;
+    }
+    .imagenAhorcado {
+        margin-left: 5vw;
+        height: 17vh;
+        width: 18vh;
+        background-color: #FAF594;
+        border-radius: 68px;
+        background-image: url(images/horca4.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 30px;
+    }
+
+    .spaceBetween{
+        display: contents;
+        margin-left: 10vw;
+    }
+    .racha{
+        margin-left: 5vw;
+        width: 33vw;
+        border-radius: 30px;
+    }
+    .palabraAdivinada{
+        font-size: x-small;
+    }
+    .tituloContainer {
+        border: 0.5vw solid #FAF594;
+        border-radius: 30px 30px 0 0;
+        margin: -0.5vh -3vw;
+    }
+    h2 {
+        padding-top: 5vh;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 2vh;
+        color: #FAF594;
+    }
+    h3{
+        font-size: medium;
+        padding-top: 1vh;
+    }
+    .letras p {
+        display: contents;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 4vh;
+        color: #8FDE83;
+    }
+    .espacios p {
+        display: contents;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 4vh;
+        color: #FAF594;
+    }
+    .letrasAdivinadas {
+        height: 10vh;
+        margin: 2% 0;
+    }
+    .buttonAlgo{
+        width: 23vw !important;
+        height: 5vh;
+        font-size: small;
+    }
+    .letrasErradas{
+        border-radius: 30px;
+    }
+    .buttonTerminar{
+        width: 35vw !important;
+        height: 5vh;
+        font-size: small !important;
+    }
+    .volverAJugar{
+        width: 58vw !important;
+    }
+    .palabraNueva{
+        width: 20em;
+        font-size: 2vh !important;
+    }
+    .buttonGuardarYEmpezar{
+        width: 45vw !important;
+        font-size: xx-small;
+    }
+    .buttonCancelar{
+        width: 41vw !important;
+        font-size: xx-small;
+        margin-left: 4vw;
+    }
+  }
