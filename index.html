@@ -32,9 +32,9 @@
                 <div class="row containerPalabra">
                     <div class="col-12">
                         <h2>Ingrese una palabra</h2>
-                        <textarea name="palabraNueva" class="palabraNueva" id="palabraNueva" cols="12" rows="2"></textarea>
+                        <textarea name="palabraNueva" class="palabraNueva" id="palabraNueva"></textarea>
                     </div>
-                    <div class="col-6"><input type="button" value="Guardar y empezar" id="botonGuardarYEmpezar" class="buttonGuardarYEmpezar" onclick="guardarNuevaPalabra()"></div>
+                    <div class="col-6 divGuardarYEmpezar"><input type="button" value="Guardar y empezar" id="botonGuardarYEmpezar" class="buttonGuardarYEmpezar" onclick="guardarNuevaPalabra()"></div>
                     <div class="col-6 divCancelar"><input type="button" value="Cancelar" id="botonNuevaCancelar" class="buttonCancelar" onclick="terminarJuego()"></div>
                 </div>
             </div>
@@ -42,11 +42,11 @@
             <div class="container containerJuego" id="containerJuego">
                 <div class="row horca">
 
-                    <div class="col-4 imagenAhorcado" id="imagenAhorcado"></div>
+                    <div class="col-4 col-lg-5 col-md-5 imagenAhorcado" id="imagenAhorcado"></div>
 
-                    <div class="col-4 spaceBetween"></div>
+                    <div class="col-4 col-lg-2 col-md-2 spaceBetween"></div>
 
-                    <div class="col-4 racha" id="racha">
+                    <div class="col-4 col-lg-5 col-md-5 racha" id="racha">
                         <div class="row tituloContainer">
                             <div class="col-12"><h3>Racha:</h3></div>
                         </div>
@@ -68,7 +68,7 @@
 
                     <div class="col-12 botonera" id="botonera">
                         <div class="row botonesYErradas">
-                            <div class="col-4 divButtonAlgo">
+                            <div class="col-12 col-lg-4 col-md-4 divButtonAlgo">
 
                                 <input type="button" value="Nuevo Juego" id="botonInicio" class="buttonAlgo" onclick="nuevoJuego()">
 
@@ -76,7 +76,7 @@
                             <div class="col-4 letrasErradas" id="letrasErradas">
 
                             </div>
-                            <div class="col-4">
+                            <div class="col-12 col-lg-4 col-md-4">
 
                                 <input type="button" value="Terminar" class="buttonTerminar" id="buttonTerminar" onclick="terminarJuego()">
                                 

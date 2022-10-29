@@ -5,426 +5,467 @@
            #FAF594 */
 
 body {
-    background-color: #C7F59D;
+  background-color: #c7f59d;
+  display: flex;
+  flex-direction: column;
 }
+
 h2 {
-    padding-top: 5vh;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 5vh;
-    color: #FAF594;
+  padding-top: 5vh;
+  font-family: "Press Start 2P", cursive;
+  font-size: 5vh;
+  color: #faf594;
 }
+
 h3 {
-    font-family: 'Press Start 2P', cursive;
-    color: #FAF594;
+  font-family: "Press Start 2P", cursive;
+  color: #faf594;
 }
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .logoAlura {
-    background-image: url(images/aluragreen.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 4rem;
-    margin-left: 7%;
-    margin-top: 3%;
-    width: 3vw;
-    display: inline-block;   
+  background-image: url(images/aluragreen.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 4rem;
+  margin-left: 7%;
+  margin-top: 1rem;
+  width: 3vw;
+  display: inline-block;
 }
-.buttonSound{
-    float: right;
-    padding-bottom: 1vh;
-    margin-top: 3%;
-    margin-right: 5%;
-    width: 3%;
-    background-color: #CFDE83;
-    border: 1px solid #CFDE83;
-    color: #FAF594;
-    font-size: xx-large;
+
+.buttonSound {
+  margin: 2rem 0 2rem 40vw;
+  width: 4rem;
+  float: right;
+  padding-bottom: 1vh;
+  background-color: #cfde83;
+  border: 1px solid #cfde83;
+  color: #faf594;
+  font-size: xx-large;
 }
+
 main {
-    text-align: center;
+  text-align: center;
 }
 .container {
-    margin-top: 15%;
+  margin-top: 15%;
 }
 input {
-    margin-bottom: 9%;
-    width: 30%;
-    height: 80%;
-    border-radius: 68px;
-    font-family: 'Press Start 2P', cursive;
+  margin-bottom: 9%;
+  width: 30%;
+  height: 80%;
+  border-radius: 68px;
+  font-family: "Press Start 2P", cursive;
 }
+
 .buttonIniciar {
-    background-color: #FAF594;
-    border: 1px solid #FAF594;
-    color: #8FDE83;
-    font-size: xx-large;
+  background-color: #faf594;
+  border: 1px solid #faf594;
+  color: #8fde83;
+  font-size: xx-large;
+  width: 60vw;
 }
+
 .buttonNuevaPalabra {
-    width: 42%;
-    background-color: #CFDE83;
-    border: 1px solid #CFDE83;
-    color: #FAF594;
-    font-size: xx-large;
+  width: 60vw;
+  background-color: #cfde83;
+  border: 1px solid #cfde83;
+  color: #faf594;
+  font-size: xx-large;
 }
 .containerJuego {
-    display: none;
-    margin-top: 0;
+  display: none;
+  margin-top: 0;
 }
+
 .horca {
-    justify-content: center;
+  justify-content: center;
 }
+
 .imagenAhorcado {
-    height: 45vh;
-    width: 33%;
-    background-color: #FAF594;
-    border-radius: 68px;
-    background-image: url("images/horca4.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+  height: 28vh;
+  background-color: #faf594;
+  border-radius: 68px;
+  background-image: url("images/horca4.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
+
 .racha {
-    border: 0.5vw solid #FAF594;
-    border-radius: 68px;
+  border: 0.5vw solid #faf594;
+  border-radius: 68px;
 }
 .tituloContainer {
-    border: 0.5vw solid #FAF594;
-    border-radius: 68px 68px 0 0;
-    margin: -0.5vh -1vw;
+  border: 1.5vw solid #faf594;
+  border-radius: 68px 68px 0 0;
+  margin: -0.5vh -1.5vw;
 }
 .palabraAdivinada {
-    font-family: 'Press Start 2P', cursive;
-    color: #FAF594;
-    margin: 1vh 0;
+  font-family: "Press Start 2P", cursive;
+  color: #faf594;
+  margin: 1vh 0;
 }
 .letrasAdivinadas {
-    height: 20vh;
-    margin: 2% 0;
+  height: 20vh;
+  margin: 2% 0;
 }
 .letras {
-    justify-content: center;
-    
+  justify-content: center;
 }
 .letras p {
-    display: contents;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 10vh;
-    color: #8FDE83;
+  display: contents;
+  font-family: "Press Start 2P", cursive;
+  font-size: 10vh;
+  color: #8fde83;
 }
 .espacios {
-    justify-content: center;
+  justify-content: center;
 }
 .espacios p {
-    display: contents;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 10vh;
-    color: #FAF594;
+  display: contents;
+  font-family: "Press Start 2P", cursive;
+  font-size: 10vh;
+  color: #faf594;
 }
 .claseLetra {
-    margin-left: 115vw;
+  margin-left: 115vw;
 }
 #adivinada {
-    color: #FAF594;
+  color: #faf594;
 }
 .botonera {
-    height: 15vh;
+  height: 15vh;
 }
+
+.botonesYErradas {
+  align-items: center;
+}
+
+.buttonAlgo,
+.buttonTerminar {
+  height: 5rem;
+}
+
 .buttonAlgo {
-    width: 20vw;
-    margin-top: 10%;
-    background-color: #FAF594;
-    border: 1px solid #FAF594;
-    color: #8FDE83;
+  width: 20vw;
+  margin-top: 10%;
+  background-color: #faf594;
+  border: 1px solid #faf594;
+  color: #8fde83;
 }
 .buttonTerminar {
-    width: 20vw;
-    margin-top: 10%;
-    background-color: #CFDE83;
-    border: 1px solid #CFDE83;
-    color: #FAF594;
+  width: 20vw;
+  margin-top: 10%;
+  background-color: #cfde83;
+  border: 1px solid #cfde83;
+  color: #faf594;
 }
-.letrasErradas{
-    background-color: #C7F59D;
-    margin-top: 2%;
-    height: 10vh;
+.letrasErradas {
+  background-color: #c7f59d;
+  border-radius: 30px;
+  margin-top: 2%;
+  height: 10vh;
 }
-.letraErrada{
-    font-family: 'Press Start 2P', cursive;
-    color: #CFDE83;
-    margin: 1vh;
-    display: inline-block;
+
+.letraErrada {
+  font-family: "Press Start 2P", cursive;
+  color: #cfde83;
+  margin: 1vh;
+  display: inline-block;
 }
+
 .volverAJugar {
-    margin-top: 3vh;
-    font-size: 1.3vw;
-    width: 30vw;
-    background-color: #CFDE83;
-    border: 1px solid #CFDE83;
-    color: #FAF594;
+  margin-top: 3vh;
+  font-size: 1.3vw;
+  width: 30vw;
+  background-color: #cfde83;
+  border: 1px solid #cfde83;
+  color: #faf594;
 }
-#containerAgregarPalabra{
-    display: none;
-    margin-top: 1%;
+#containerAgregarPalabra {
+  display: none;
+  margin-top: 1%;
 }
-#containerAgregarPalabra h2{
-    margin-bottom: 5%;
+#containerAgregarPalabra h2 {
+  margin-bottom: 5%;
 }
-#palabraNueva{
-    border: 9px solid #FAF594;
-    border-radius: 68px;
-    margin-bottom: 12%;
-    background-color: #C7F59D;
-    color: #FAF594;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 10vh;
-    text-align: center;
-    outline: none;
+#palabraNueva {
+  border: 9px solid #faf594;
+  border-radius: 68px;
+  margin-bottom: 12%;
+  background-color: #c7f59d;
+  color: #faf594;
+  font-family: "Press Start 2P", cursive;
+  font-size: 10vh;
+  text-align: center;
+  outline: none;
+  width: 60vw;
 }
-#containerAgregarPalabra .row input{
-    width: 50%;
-    background-color: #C7F59D;
-    border: 9px solid #FAF594;
-    color: #8FDE83;
+#containerAgregarPalabra .row input {
+  width: 100%;
+  background-color: #c7f59d;
+  border: 9px solid #faf594;
+  color: #8fde83;
 }
-#containerAgregarPalabra .row .buttonCancelar{
-    border: 9px solid #C7F59D;
-    border-radius: 68px;
-    background-color: #CFDE83;
-    color: #FAF594;
+#containerAgregarPalabra .row .buttonCancelar {
+  border: 9px solid #c7f59d;
+  border-radius: 68px;
+  background-color: #cfde83;
+  color: #faf594;
 }
+
 @media (max-width: 768px) {
-    .logoAlura{
-        width: 8vw;
-        margin-top: 10%;
-    }
-    .buttonSound{
-        width: 15vw;
-        margin-top: 9%;
-    }
-    .col-12 input{
-        font-size: inherit;
-        width: 65vw;
-    }
-    .imagenAhorcado {
-        margin-left: 5vw;
-        height: 17vh;
-        width: 18vh;
-        background-color: #FAF594;
-        border-radius: 68px;
-        background-image: url(images/horca4.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        border-radius: 30px;
-    }
-
-    .spaceBetween{
-        display: contents;
-        margin-left: 10vw;
-    }
-    .racha{
-        margin-left: 5vw;
-        width: 33vw;
-        border-radius: 30px;
-    }
-    .palabraAdivinada{
-        font-size: x-small;
-    }
-    .tituloContainer {
-        border: 0.5vw solid #FAF594;
-        border-radius: 30px 30px 0 0;
-        margin: -0.5vh -3vw;
-    }
-    h2 {
-        padding-top: 5vh;
-        font-family: 'Press Start 2P', cursive;
-        font-size: 2vh;
-        color: #FAF594;
-    }
-    h3{
-        font-size: medium;
-        padding-top: 1vh;
-    }
-    .letras p {
-        display: contents;
-        font-family: 'Press Start 2P', cursive;
-        font-size: 4vh;
-        color: #8FDE83;
-    }
-    .espacios p {
-        display: contents;
-        font-family: 'Press Start 2P', cursive;
-        font-size: 4vh;
-        color: #FAF594;
-    }
-    .letrasAdivinadas {
-        height: 10vh;
-        margin: 2% 0;
-    }
-    .buttonAlgo{
-        width: 23vw !important;
-        height: 5vh;
-        font-size: small;
-    }
-    .letrasErradas{
-        border-radius: 30px;
-    }
-    .buttonTerminar{
-        width: 35vw !important;
-        height: 5vh;
-        font-size: small !important;
-    }
-    .volverAJugar{
-        width: 58vw !important;
-    }
-    .containerPalabra{
-        display: block;
-    }
-    .containerPalabra .col-6{
-        display: inline-block;
-    }
-    .divCancelar{
-        display: contents !important;
-    }
-    .palabraNueva{
-        width: 20em;
-        font-size: 4vh !important;
-    }
-    .buttonGuardarYEmpezar{
-        width: 45vw !important;
-        font-size: xx-small;
-    }
-    .buttonCancelar{
-        width: 41vw !important;
-        font-size: xx-small;
-        margin-left: 4vw;
-    }
+  body {
+    display: flex;
+    flex-direction: column;
   }
+
+  .logoAlura {
+    width: 8vw;
+    margin-top: 10%;
+  }
+  .buttonSound {
+    width: 4rem;
+    margin-top: 9%;
+  }
+  .col-12 input {
+    font-size: inherit;
+    width: 65vw;
+  }
+  .imagenAhorcado {
+    margin-left: 5vw;
+    height: 23vh;
+    width: 23vh;
+    background-color: #faf594;
+    border-radius: 68px;
+    background-image: url(images/horca4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 30px;
+  }
+
+  .spaceBetween {
+    display: contents;
+    margin-left: 10vw;
+  }
+  .racha {
+    margin-left: 5vw;
+    width: 28vw;
+    border-radius: 30px;
+  }
+  .palabraAdivinada {
+    font-size: x-small;
+  }
+  .tituloContainer {
+    border: 1.5vw solid #faf594;
+    border-radius: 30px 30px 0 0;
+    margin: -0.5vh -2vw;
+  }
+  h2 {
+    padding-top: 5vh;
+    font-family: "Press Start 2P", cursive;
+    font-size: 2vh;
+    color: #faf594;
+  }
+  h3 {
+    font-size: medium;
+    padding-top: 1vh;
+  }
+  .letras p {
+    display: contents;
+    font-family: "Press Start 2P", cursive;
+    font-size: 4vh;
+    color: #8fde83;
+  }
+  .espacios p {
+    display: contents;
+    font-family: "Press Start 2P", cursive;
+    font-size: 4vh;
+    color: #faf594;
+  }
+  .letrasAdivinadas {
+    height: 10vh;
+    margin: 2% 0;
+  }
+
+  .botonesYErradas {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .buttonAlgo {
+    width: 60vw;
+    height: 5vh;
+    font-size: small;
+  }
+  .letrasErradas {
+    order: -1;
+    border-radius: 30px;
+  }
+  .buttonTerminar {
+    width: 65vw;
+    height: 5vh;
+    margin-top: 1%;
+    font-size: small !important;
+  }
+  .volverAJugar {
+    width: 58vw !important;
+  }
+  .containerPalabra {
+    display: block;
+  }
+  .containerPalabra .col-6 {
+    display: inline-block;
+  }
+  .divCancelar {
+    display: contents !important;
+  }
+  .palabraNueva {
+    width: 20em;
+    font-size: 4vh !important;
+  }
+  .buttonGuardarYEmpezar {
+    width: 45vw !important;
+    font-size: xx-small;
+  }
+  .buttonCancelar {
+    width: 41vw !important;
+    font-size: xx-small;
+    margin-left: 4vw;
+  }
+}
 @media (max-width: 480px) {
-
-    header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .logoAlura{
-        width: 8vw;
-        margin-top: 10%;
-    }
-    .buttonSound{
-        width: 15vw;
-        margin-top: 3%;
-        margin-left: 10rem;
-    }
-    .col-12 input{
-        font-size: inherit;
-        width: 65vw;
-    }
-
-    .horca{
-        flex-direction: column;
-        height: 75vh;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .imagenAhorcado {
-        margin-left: 5vw;
-        height: 25vh;
-        width: 25vh;
-        background-color: #FAF594;
-        border-radius: 68px;
-        background-image: url(images/horca4.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        border-radius: 30px;
-    }
-
-    .spaceBetween{
-        display: contents;
-        margin-left: 10vw;
-    }
-    .racha{
-        margin-left: 3vw;
-        margin-top: 1rem;
-        width: 30vw;
-        height: 20vh;
-        border-radius: 30px;
-    }
-
-    .palabraAdivinada{
-        font-size: x-small;
-    }
-
-    .botonesYErradas{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .letrasErradas{
-        order: -1;
-        width: 75vw;
-    }
-
-    .buttonAlgo{
-        width: 75vw!important;
-    }
-
-    .tituloContainer {
-        border: 0.5vw solid #FAF594;
-        border-radius: 30px 30px 0 0;
-        margin: -0.5vh -3vw;
-    }
-    h2 {
-        padding-top: 5vh;
-        font-family: 'Press Start 2P', cursive;
-        font-size: 2vh;
-        color: #FAF594;
-    }
-    h3{
-        font-size: medium;
-        padding-top: 1vh;
-    }
-    .letras p {
-        display: contents;
-        font-family: 'Press Start 2P', cursive;
-        font-size: 4vh;
-        color: #8FDE83;
-    }
-    .espacios p {
-        display: contents;
-        font-family: 'Press Start 2P', cursive;
-        font-size: 4vh;
-        color: #FAF594;
-    }
-    .letrasAdivinadas {
-        height: 10vh;
-        margin: 2% 0;
-    }
-    .buttonAlgo{
-        width: 23vw !important;
-        height: 5vh;
-        font-size: small;
-    }
-    .letrasErradas{
-        border-radius: 30px;
-    }
-    .buttonTerminar{
-        width: 35vw !important;
-        height: 5vh;
-        font-size: small !important;
-    }
-    .volverAJugar{
-        width: 58vw !important;
-    }
-    .palabraNueva{
-        width: 20em;
-        font-size: 2vh !important;
-    }
-    .buttonGuardarYEmpezar{
-        width: 45vw !important;
-        font-size: xx-small;
-    }
-    .buttonCancelar{
-        width: 41vw !important;
-        font-size: xx-small;
-        margin-left: 4vw;
-    }
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
+  .logoAlura {
+    width: 8vw;
+    margin-top: 10%;
+  }
+  .buttonSound {
+    width: 15vw;
+    margin-top: 3%;
+    margin-left: 10rem;
+  }
+  .col-12 input {
+    font-size: inherit;
+    width: 65vw;
+  }
+
+  .horca {
+    flex-direction: column;
+    height: 75vh;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .imagenAhorcado {
+    margin-left: 5vw;
+    height: 25vh;
+    width: 25vh;
+    background-color: #faf594;
+    border-radius: 68px;
+    background-image: url(images/horca4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 30px;
+  }
+
+  .spaceBetween {
+    display: contents;
+    margin-left: 10vw;
+  }
+  .racha {
+    order: -1;
+    margin-top: 1rem;
+    width: 55vw;
+    height: 15vh;
+    border-radius: 30px;
+  }
+
+  .palabraAdivinada {
+    font-size: x-small;
+  }
+
+  .botonesYErradas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .letrasErradas {
+    order: -1;
+    width: 75vw;
+  }
+
+  .tituloContainer {
+    border: 1.5vw solid #faf594;
+    border-radius: 30px 30px 0 0;
+    margin: -0.5vh -3.6vw;
+  }
+  h2 {
+    padding-top: 5vh;
+    font-family: "Press Start 2P", cursive;
+    font-size: 2vh;
+    color: #faf594;
+  }
+  h3 {
+    font-size: medium;
+    padding-top: 1vh;
+  }
+  .letras p {
+    display: contents;
+    font-family: "Press Start 2P", cursive;
+    font-size: 4vh;
+    color: #8fde83;
+  }
+  .espacios p {
+    display: contents;
+    font-family: "Press Start 2P", cursive;
+    font-size: 4vh;
+    color: #faf594;
+  }
+  .letrasAdivinadas {
+    height: 10vh;
+    margin: 2% 0;
+  }
+  .buttonAlgo {
+    height: 5vh;
+    font-size: small;
+    margin: 1rem;
+  }
+  .letrasErradas {
+    border-radius: 30px;
+  }
+  .buttonTerminar {
+    height: 5vh;
+    font-size: small !important;
+  }
+  .volverAJugar {
+    width: 58vw !important;
+  }
+  .palabraNueva {
+    width: 20em;
+    font-size: 2vh !important;
+  }
+  .buttonGuardarYEmpezar {
+    width: 45vw !important;
+    font-size: xx-small;
+  }
+  .buttonCancelar {
+    width: 41vw !important;
+    font-size: xx-small;
+    margin-left: 4vw;
+  }
+}
