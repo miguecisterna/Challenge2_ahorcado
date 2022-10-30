@@ -57,6 +57,11 @@ main {
 .container {
   margin-top: 15%;
 }
+
+#botonesMenuPrinipal{
+    margin-top: 5rem;
+}
+
 input {
   margin-bottom: 9%;
   width: 30%;
@@ -200,7 +205,7 @@ input {
 #palabraNueva {
   border: 9px solid #faf594;
   border-radius: 68px;
-  margin-bottom: 12%;
+  margin-bottom: 3rem;
   background-color: #c7f59d;
   color: #faf594;
   font-family: "Press Start 2P", cursive;
